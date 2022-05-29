@@ -1,0 +1,39 @@
+parameters:
+    level: 1
+    paths:
+        - app
+    reportUnmatchedIgnoredErrors: false
+    checkGenericClassInNonGenericObjectType: false
+    checkMissingIterableValueType: false
+    ignoreErrors:
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::online\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::create\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::where\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::select\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::findOrFail\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::firstOrCreate\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::find\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::whereIn\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::orderBy\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::update\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::insert\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::weight\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::contents\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::tax\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::item\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::remove\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::destroy\(\)#'
+        - '#Static call to instance method [a-zA-Z0-9\\_]+::forceCreate\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::total\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::Online\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::weight\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::contents\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::tax\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::remove\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::item\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::destroy\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::has\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::totalItems\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::totalItems\(\)#'
+        - '#Call to an undefined static method [a-zA-Z0-9\\_]+::eloquentQuery\(\)#'
+        - '#Call to static method forceScheme\(\) on an unknown class URL.#'
