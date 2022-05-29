@@ -28,8 +28,9 @@
                     <!-- gallery end.// -->
                 </aside>
                 <main>
+                    <form wire:submit.prevent="submit" method="POST">
                     <h2 class="font-semibold text-2xl mb-4">
-                        Sweater Men New Arrival Casual Pullover <br> Men Long Sleeve
+                        {{ $product->name }}
                     </h2>
 
                     <div class="flex flex-wrap items-center space-x-2 mb-2">
@@ -49,7 +50,7 @@
                             <circle cx="3" cy="3" r="3" fill="#DBDBDB"></circle>
                         </svg>
 
-                        <span class="text-green-500">Verified</span>
+{{--                        <span class="text-green-500">Verified</span>--}}
 
                     </div>
 
@@ -65,13 +66,13 @@
 
                     <ul class="mb-5">
                         <li class="mb-1"> <b class="font-medium w-36 inline-block">Model#:</b>
-                            <span class="text-gray-500">Odsy-1000</span>
+                            <span class="text-gray-500">{{ $product->number }}</span>
                         </li>
-                        <li class="mb-1"> <b class="font-medium w-36 inline-block">Color:</b>
-                            <span class="text-gray-500">Brown</span>
+                        <li class="mb-1"> <b class="font-medium w-36 inline-block">Weight:</b>
+                            <span class="text-gray-500">{{ $product->weight }}</span>
                         </li>
-                        <li class="mb-1"> <b class="font-medium w-36 inline-block">Delivery:</b>
-                            <span class="text-gray-500">Russia, USA &amp; Europe</span></li>
+{{--                        <li class="mb-1"> <b class="font-medium w-36 inline-block">Delivery:</b>--}}
+{{--                            <span class="text-gray-500">Russia, USA &amp; Europe</span></li>--}}
                         <li class="mb-1"> <b class="font-medium w-36 inline-block">Color:</b>
                             <span class="text-gray-500">Brown</span>
                         </li>
@@ -111,16 +112,17 @@
                         <a class="px-4 py-2 inline-block text-white bg-yellow-500 border border-transparent rounded-md hover:bg-yellow-600" href="#">
                             Buy now
                         </a>
-                        <a class="px-4 py-2 inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700" href="#">
+                        <button type="submit"class="px-4 py-2 inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700">
                             <i class="fa fa-shopping-cart mr-2"></i>
                             Add to cart
-                        </a>
+                        </button>
 {{--                        <a class="px-4 py-2 inline-block text-blue-600 border border-gray-300 rounded-md hover:bg-gray-100" href="#">--}}
 {{--                            <i class="fa fa-heart mr-2"></i>--}}
 {{--                            Save for later--}}
 {{--                        </a>--}}
                     </div>
                     <!-- action buttons .//end -->
+                    </form>
                 </main>
             </div> <!-- grid .// -->
         </div> <!-- container .// -->
