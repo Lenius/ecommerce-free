@@ -1,0 +1,5 @@
+/.idea
+/.env-php-expanded*
+/docker-compose-merged-*.yml
+/dev-certs
+*.cache
