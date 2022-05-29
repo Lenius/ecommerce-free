@@ -13,6 +13,9 @@ class BrandSeeder extends Seeder
     {
         $items = [
             ['name' => 'Coca Cola', 'online' => true, 'description' => ''],
+            ['name' => 'Pepsi', 'online' => true, 'description' => ''],
+            ['name' => 'Arla', 'online' => true, 'description' => ''],
+            ['name' => 'Kims', 'online' => true, 'description' => ''],
         ];
 
         foreach ($items as $item) {

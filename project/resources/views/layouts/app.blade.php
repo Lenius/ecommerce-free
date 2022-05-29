@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link href="/fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
 
     @shared
 
@@ -24,7 +25,7 @@
             <div class="flex flex-wrap items-center">
                 <!-- Brand -->
                 <div class="flex-shrink-0 mr-5">
-                    <a href="#"> <img src="images/logo.svg" height="38" alt="Brand"> </a>
+                    <a href="#"> <img src="/images/logo.svg" height="38" alt="Brand"> </a>
                 </div>
                 <!-- Brand .//end -->
 
@@ -69,7 +70,7 @@
         </div> <!-- container //end -->
     </header>
 
-    <main class="container">
+    <main>
         @yield('content')
         {{ $slot ?? '' }}
     </main>
@@ -82,7 +83,7 @@
 
                 <div class="flex flex-wrap">
                     <aside class="w-full md:w-1/3 lg:w-1/4 mb-5">
-                        <img src="images/logo-white.png" height="38" alt="Company name">
+                        <img src="/images/logo-white.png" height="38" alt="Company name">
                         <p class="my-4">
                             Company name. <br> © 2018- 2021 Templatemount. <br>
                             All rights reserved.
@@ -178,7 +179,7 @@
             <div class="container max-w-screen-xl mx-auto px-4">
                 <div class="lg:flex justify-between">
                     <div class="mb-3">
-                        <img src="images/misc/payments.png" height="24" class="h-6" alt="Payment methods">
+                        <img src="/images/misc/payments.png" height="24" class="h-6" alt="Payment methods">
                     </div> <!-- col .// -->
                     <div class="space-x-6">
                         <nav class="text-sm space-x-4">
